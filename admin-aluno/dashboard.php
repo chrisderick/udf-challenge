@@ -50,6 +50,10 @@ include("../aluno/verifica.php");
         <ul class="list-unstyled components">
 
             <p>Painel de Controle</p>
+            <li>
+                <a href="?page=home">Inicio</a>
+            </li>
+            
             <li class="active">
                 <a href="#usuarioSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     <?php echo $ecu["nome_aluno"] ?>
@@ -57,43 +61,33 @@ include("../aluno/verifica.php");
                 <ul class="collapse list-unstyled" id="usuarioSubmenu">
                     
                     <li>
-                        <a href="#">Perfil</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Minhas Comunidades</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Historico</a>
+                        <a href="?page=perfil">Editar Perfil</a>
                     </li>
                 
                 </ul>
             </li>
-            <li>
-                <a href="#">Ranking</a>
-            </li>
+            
 
-            <li><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Moderador</a>
+            <li><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Academico</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                     
                     <li>
-                        <a href="#">Criar Nova Comunidade</a>
+                        <a href="?page=quest">Questões</a>
                     </li>
                     
                     <li>
-                        <a href="#">Comunidades Gerenciadas</a>
+                        <a href="?page=rank">Ranking</a>
                     </li>
                     
                     <li>
-                        <a href="#">Desafios</a>
+                        <a href="?page=historico">Historico</a>
                     </li>
                     
                 </ul>
             </li>
 
             <li>
-                <a href="#">Central de Dúvidas</a>
+                <a href="?page=faq">Central de Dúvidas</a>
             </li>
 
             <li>
@@ -109,25 +103,13 @@ include("../aluno/verifica.php");
             <i class="far fa-arrow-alt-circle-left"></i>
         </button>
 
-        <h2>Texto só pra ocupar espaço</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h3>Lorem Ipsum Dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+        <div class="container">
+            <div class="row">
+               <?php include("page.php")?>
+            </div>
+        </div>
+    
+    
     </div>
 </div>
 
